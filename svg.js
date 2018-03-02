@@ -60,19 +60,10 @@ var dvdCallback = function(e){
     
     var run = function(){
 	clearCallback();
-	/*
 	var c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
 	c.setAttribute("cx", x);
 	c.setAttribute("cy", y);
 	c.setAttribute("r", 10);
-	svg.appendChild(c);
-	*/
-	var c = document.createElementNS("http://www.w3.org/2000/svg", "image");
-	c.setAttribute("xlink:href", "https://en.wikipedia.org/wiki/DVD#/media/File:DVD_logo.svg");
-	c.setAttribute("x", x)
-	c.setAttribute("y", y);
-	c.setAttribute("height", 10);
-	c.setAttribute("width", 10);
 	svg.appendChild(c);
 	if (x <= 0){
 	    diffX = 2;
